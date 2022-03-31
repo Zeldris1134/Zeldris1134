@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background-color: #000000ce;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  background-color: #add8e6ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 5px;
+}
+
+.firstNumber {
+  margin-top: 30px;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.calc input {
+  margin-bottom: 1.25rem;
+  margin-left: 1.5rem;
+  width: 269px;
+}
+
+.button-wrap {
+  width: 447.636px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.answer-container {
+  margin-top: 1.25rem;
+  display: flex;
+}
+
+.answer-container label {
+  margin-right: 110px;
+}
+
+.answer p {
+  background-color: white;
+  width: 265px;
+  border: 1px solid black;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  font-size: 3rem;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.closed {
+  transform: translateY(-170px);
+}
+
+.closed h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.closed h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .closed {
+    margin-top: 85px;
+  }
+
+  .calc input {
+    width: 160px;
+  }
+
+  .button-wrap {
+    width: 338.625px;
+  }
+
+  .btn {
+    padding: 7.5px 12.5px;
+  }
+
+  .answer-container {
+    width: 338.625px;
+  }
+
+  #answer {
+    width: 160px;
+  }
+
+  .answer-container label {
+    margin-right: 107px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .closed h1 {
+    font-size: 2rem;
+  }
+
+  .closed h2 {
+    font-size: 1.5rem;
+  }
+
+  .close {
+    right: 13px;
+  }
+
+  .closed {
+    transform: translateY(-235px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .firstNumber label {
+    display: block;
+  }
+  #fnumber {
+    margin-left: 0px;
+    margin-bottom: 12.5px;
+  }
+  #snumber {
+    margin-left: 0px;
+    margin-bottom: 12.5px;
+  }
+
+  .secondNumber label {
+    display: block;
+  }
+
+  .calc {
+    margin-top: 0px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .button-wrap {
+    display: inline;
+    width: 180px;
+    margin-left: 20px;
+    height: auto;
+  }
+
+  .btn {
+    width: 42.03px;
+    height: 43px;
+    margin-right: 12px;
+  }
+
+  .plus,
+  .minus,
+  .multiply {
+    margin-bottom: 8px;
+  }
+
+  .answer-container {
+    display: block;
+    width: 160px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    height: 100vh;
+  }
+
+  .closed h1 {
+    font-size: 1.75rem;
+  }
+
+  .closed h2 {
+    font-size: 1.25rem;
+  }
+
+  .closed {
+    margin-top: 40px;
+  }
+
+  .container {
+    height: 100vw;
+  }
+
+  .answer-container {
+    margin-bottom: 20px;
+  }
+
+  .firstNumber {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    height: 100vh;
+  }
+
+  .closed h1 {
+    font-size: 1.25rem;
+  }
+
+  .closed h2 {
+    font-size: 1rem;
+  }
+
+  .closed {
+    margin-top: 130px;
+  }
+
+  .close {
+    right: 8px;
+    font-size: 2.25rem;
+  }
+
+  .firstNumber {
+    margin-top: 20px;
+  }
+
+  #fnumber {
+    margin-bottom: 10px;
+  }
+  #snumber {
+    margin-bottom: 10px;
+  }
+
+  .answer-container {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+
+  .closed {
+    transform: translateY(-305px);
+  }
+}
