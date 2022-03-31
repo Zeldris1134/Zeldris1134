@@ -11,27 +11,27 @@ const closeBtn = document.querySelector(".close");
 
 const addition = function () {
   let sum = ~~number1.value + ~~number2.value;
-  document.getElementById("answer").innerText = sum;
+  document.getElementById("answer").innerText = sum.toFixed(2);
 };
 
 const subtraction = function () {
   let sum = ~~number1.value - ~~number2.value;
-  document.getElementById("answer").innerText = sum;
+  document.getElementById("answer").innerText = sum.toFixed(2);
 };
 
 const multiply = function () {
   let sum = ~~number1.value * ~~number2.value;
-  document.getElementById("answer").innerText = sum;
+  document.getElementById("answer").innerText = sum.toFixed(2);
 };
 
 const divide = function () {
   let sum = ~~number1.value / ~~number2.value;
-  document.getElementById("answer").innerText = sum;
+  document.getElementById("answer").innerText = sum.toFixed(2);
 };
 
 const remainder = function () {
   let sum = ~~number1.value % ~~number2.value;
-  document.getElementById("answer").innerText = sum;
+  document.getElementById("answer").innerText = sum.toFixed(2);
 };
 
 const clear = function () {
