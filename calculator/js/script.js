@@ -11,33 +11,33 @@ const closeBtn = document.querySelector(".close");
 
 const addition = function () {
   let sum = ~~number1.value + ~~number2.value;
-  document.getElementById("answer").innerText = sum.toFixed(2);
+  answer.innerText = sum.toFixed(2);
 };
 
 const subtraction = function () {
   let sum = ~~number1.value - ~~number2.value;
-  document.getElementById("answer").innerText = sum.toFixed(2);
+  answer.innerText = sum.toFixed(2);
 };
 
 const multiply = function () {
   let sum = ~~number1.value * ~~number2.value;
-  document.getElementById("answer").innerText = sum.toFixed(2);
+  answer.innerText = sum.toFixed(2);
 };
 
 const divide = function () {
   let sum = ~~number1.value / ~~number2.value;
-  document.getElementById("answer").innerText = sum.toFixed(2);
+  answer.innerText = sum.toFixed(2);
 };
 
 const remainder = function () {
   let sum = ~~number1.value % ~~number2.value;
-  document.getElementById("answer").innerText = sum.toFixed(2);
+  answer.innerText = sum.toFixed(2);
 };
 
 const clear = function () {
-  document.getElementById("fnumber").value = 0;
-  document.getElementById("snumber").value = 0;
-  document.getElementById("answer").innerText = 0;
+  number1.value = 0;
+  number2.value = 0;
+  answer.innerText = 0;
 };
 
 const close = function () {
