@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Playhouse Theatre</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar-logo"><a href="index.html">Playhouse Theatre</a></h1>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="shows.html" class="nav-links">Shows</a></li>
+          <li><a href="aboutUs.html" class="nav-links">About Us</a></li>
+          <li><a href="contactUs.html" class="nav-links">Contact Us</a></li>
+          <li>
+            <a href="#" id="nav-links-btn" class="nav-links nav-links-btn"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img class="img-down" src="/img/1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/4.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="/img/5.jpg" alt="" />
+        </div>
+        <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>
+    </section>
+    <section class="shows-container">
+      <div class="headWhatsOn"></div>
+      <div class="grid">
+        <div class="column">
+          <img src="/img/show1.jpg" alt="Lord of the rings Musical" />
+        </div>
+        <div class="column">
+          <img src="/img/show2.jpg" alt="Harry Potter Live in Concert" />
+        </div>
+        <div class="column">
+          <img src="/img/show3.jpg" alt="Shrek the Musical" />
+        </div>
+        <div class="column">
+          <img src="/img/show4.jpg" alt="Swan Lake" />
+        </div>
+        <div class="column">
+          <img src="/img/show5.jpg" alt="Cats" />
+        </div>
+        <div class="column">
+          <img src="/img/show6.jpg" alt="The Phantom of the Opera" />
+        </div>
+        <div class="column">
+          <img src="/img/show7.jpg" alt="The Lion King" />
+        </div>
+        <div class="column">
+          <img src="/img/show8.jpg" alt="Little Shop of Horros" />
+        </div>
+      </div>
+    </section>
+    <div class="footer-container">
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="#" id="nav-links-btn">Sign Up</a></li>
+        </ul>
+        <p>&copy;Playhouse Theatre | All Rights Reserved</p>
+      </footer>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <section class="signup">
+        <div class="container">
+          <div class="signup-content">
+            <div class="signup-form">
+              <h2 class="form-title">Sign up</h2>
+              <form class="register-form" id="register-form">
+                <div class="form-group">
+                  <label for="name"
+                    ><i class="zmdi zmdi-account material-icons-name"></i
+                  ></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"><i class="zmdi zmdi-email"></i></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    pattern=".+@gmail\.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                  <input
+                    type="password"
+                    name="pass"
+                    id="pass"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="re-pass"
+                    ><i class="zmdi zmdi-lock-outline"></i
+                  ></label>
+                  <input
+                    type="password"
+                    name="re_pass"
+                    id="re_pass"
+                    placeholder="Repeat your password"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="checkbox"
+                    name="agree-term"
+                    id="agree-term"
+                    class="agree-term"
+                  />
+                  <label for="agree-term" class="label-agree-term"
+                    ><span><span></span></span>I agree all statements in
+                    <a href="#" class="term-service">Terms of service</a></label
+                  >
+                </div>
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="signup"
+                    id="signup"
+                    class="form-submit"
+                    value="Register"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="signup-image">
+              <figure>
+                <img src="img/playhouse-logo.png" alt="sing up image" />
+              </figure>
+              <a href="#" class="signup-image-link">I am already member</a>
+            </div>
+          </div>
+          <div id="registeredAccount" class="signin-link deactive">
+            <a href="#">Please <span>Sign In</span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- JavaScript -->
+    <script src="/js/script.js"></script>
+    <script src="/js/slideshow.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- React JS Script add-ins -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="/js/react.js"></script>
+  </body>
+</html>
