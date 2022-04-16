@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
@@ -47,19 +47,19 @@
     <section class="slider-container">
       <div class="slider">
         <div class="slide active">
-          <img class="img-down" src="/img/1.jpg" alt="" />
+          <img class="img-down" src="./img/1.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/img/2.jpg" alt="" />
+          <img src="./img/2.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/img/3.jpg" alt="" />
+          <img src="./img/3.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/img/4.jpg" alt="" />
+          <img src="./img/4.jpg" alt="" />
         </div>
         <div class="slide">
-          <img src="/img/5.jpg" alt="" />
+          <img src="./img/5.jpg" alt="" />
         </div>
         <div class="navigation">
           <i class="fas fa-chevron-left prev-btn"></i>
@@ -78,28 +78,28 @@
       <div class="headWhatsOn"></div>
       <div class="grid">
         <div class="column">
-          <img src="/img/show1.jpg" alt="Lord of the rings Musical" />
+          <img src="./img/show1.jpg" alt="Lord of the rings Musical" />
         </div>
         <div class="column">
-          <img src="/img/show2.jpg" alt="Harry Potter Live in Concert" />
+          <img src="./img/show2.jpg" alt="Harry Potter Live in Concert" />
         </div>
         <div class="column">
-          <img src="/img/show3.jpg" alt="Shrek the Musical" />
+          <img src="./img/show3.jpg" alt="Shrek the Musical" />
         </div>
         <div class="column">
-          <img src="/img/show4.jpg" alt="Swan Lake" />
+          <img src="./img/show4.jpg" alt="Swan Lake" />
         </div>
         <div class="column">
-          <img src="/img/show5.jpg" alt="Cats" />
+          <img src="./img/show5.jpg" alt="Cats" />
         </div>
         <div class="column">
-          <img src="/img/show6.jpg" alt="The Phantom of the Opera" />
+          <img src="./img/show6.jpg" alt="The Phantom of the Opera" />
         </div>
         <div class="column">
-          <img src="/img/show7.jpg" alt="The Lion King" />
+          <img src="./img/show7.jpg" alt="The Lion King" />
         </div>
         <div class="column">
-          <img src="/img/show8.jpg" alt="Little Shop of Horros" />
+          <img src="./img/show8.jpg" alt="Little Shop of Horros" />
         </div>
       </div>
     </section>
@@ -231,8 +231,8 @@
     </div>
     <div class="overlay hidden"></div>
     <!-- JavaScript -->
-    <script src="/js/script.js"></script>
-    <script src="/js/slideshow.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slideshow.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -241,7 +241,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <!-- React JS Script add-ins -->
+    <!-- React JS Component & Script add-ins -->
     <script
       crossorigin
       src="https://unpkg.com/react@17/umd/react.development.js"
@@ -251,6 +251,11 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" src="/js/react.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Whats On</h1>,
+        document.querySelector(".headWhatsOn")
+      );
+    </script>
   </body>
 </html>
