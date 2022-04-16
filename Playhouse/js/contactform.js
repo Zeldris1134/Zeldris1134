@@ -10,7 +10,7 @@ const contactMessage = document.querySelector("#contact-message");
 submitBtn.addEventListener("click", (e) => {
   if (contactEmail.value.match(validRegex)) {
     e.preventDefault();
-    window.location.href = "https://zeldris1134.github.io/thankyou.html";
+    window.location.href = "https://zeldris1134.github.io/Playhouse/thankyou.html";
   } else {
     contactEmail.focus();
   }
